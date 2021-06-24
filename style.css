@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,18 +30,18 @@ section::before {
     position: absolute;
     bottom: -40%;
     left: 40%;
-    width: 600px;
-    height: 600px;
+    width: 60.0rem;
+    height: 60.0rem;
     background: linear-gradient(#f00, #f0f);
     border-radius: 50%;
 }
 
 .card {
     position: relative;
-    width: 508px;
-    height: 314px;
+    width: 50.8rem;
+    height: 31.4rem;
     transform-style: preserve-3d;
-    perspective: 500px;
+    perspective: 50.0rem;
 }
 
 .card .face {
@@ -46,10 +50,10 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0);
-    border-radius: 15px;
+    box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0);
+    border-radius: 1.5rem;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1.0rem);
     transform-style: preserve-3d;
     transition: 1s;
     backface-visibility: hidden;
@@ -70,10 +74,10 @@ section::before {
 .card .face.front::before {
     content: '';
     position: absolute;
-    bottom: 40px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
+    bottom: 4.0rem;
+    right: 4.0rem;
+    width: 6.0rem;
+    height: 6.0rem;
     background: #fff;
     border-radius: 50%;
     opacity: 0.5;
@@ -82,10 +86,10 @@ section::before {
 .card .face.front::after {
     content: '';
     position: absolute;
-    bottom: 40px;
-    right: 80px;
-    width: 60px;
-    height: 60px;
+    bottom: 4.0rem;
+    right: 8.0rem;
+    width: 6.0rem;
+    height: 6.0rem;
     background: #fff;
     border-radius: 50%;
     opacity: 0.7;
@@ -93,46 +97,46 @@ section::before {
 
 .card .face.front .debit {
     position: absolute;
-    left: 40px;
-    top: 30px;
+    left: 4.0rem;
+    top: 3.0rem;
     color: #fff;
     font-weight: 500;
 }
 
 .card .face.front .bank {
     position: absolute;
-    right: 40px;
-    top: 25px;
+    right: 4.0rem;
+    top: 2.5rem;
     color: #fff;
     font-weight: 500;
     font-style: italic;
-    font-size: 24px;
+    font-size: 2.4rem;
 
 }
 
 .card .face.front .chip {
     position: absolute;
-    top: 80px;
-    left: 50px;
-    max-width: 64px;
+    top: 8.0rem;
+    left: 5.0rem;
+    max-width: 6.4rem;
 }
 
 .card .face.front .number {
     position: absolute;
-    bottom: 130px;
-    left: 40px;
+    bottom: 13.0rem;
+    left: 4.0rem;
     color: #fff;
     font-weight: 500;
-    letter-spacing: 6px;
-    font-size: 18px;
-    text-shadow: 0 2px 1px #0005;
+    letter-spacing: .6rem;
+    font-size: 1.8rem;
+    text-shadow: 0 .2rem .1rem #0005;
     font-family: 'Orbitron', sans-serif;
 }
 
 .card .face.front .valid {
     position: absolute;
-    bottom: 90px;
-    left: 40px;
+    bottom: 9.0rem;
+    left: 4.0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,62 +147,62 @@ section::before {
 }
 
 .card .face.front .valid span:last-child {
-    margin-left: 20px;
-    font-size: 16px;
+    margin-left: 2.0rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
 }
 
 .card .face.front .cardHolder {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 4.0rem;
+    left: 4.0rem;
     color: #fff;
     font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
 }
 
 .card .face.back .blackbar {
     position: absolute;
-    top: 40px;
+    top: 4.0rem;
     width: 100%;
-    height: 60px;
+    height: 6.0rem;
     background: #000;
 }
 
 .card .face.back .cvvtext {
     position: absolute;
-    top: 120px;
-    left: 30px;
+    top: 12.0rem;
+    left: 3.0rem;
 }
 
 .card .face.back .cvvtext h5 {
     color: #fff;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
 }
 
 .card .face.back .cvvtext .whiteBar {
     position: relative;
-    width: 400px;
-    height: 40px;
+    width: 40.0rem;
+    height: 4.0rem;
     background: #fff;
-    margin-top: 5px;
+    margin-top: .5rem;
 }
 
 .card .face.back .cvvtext .cvv {
     position: relative;
-    top: -35px;
-    left: 395px;
+    top: -3.5rem;
+    left: 39.5rem;
     background: #ccc;
     color: #111;
-    width: 50px;
-    height: 30px;
+    width: 5.0rem;
+    height: 3.0rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,11 +210,29 @@ section::before {
 
 .card .face.back .text {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
+    bottom: 3.0rem;
+    left: 3.0rem;
+    right: 3.0rem;
     color: #fff;
-    font-size: 10px;
+    font-size: 1.0rem;
     line-height: 1.4em;
     font-weight: 300;
+}
+
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:320px) {
+    html {
+        font-size: 35%;
+    }
 }
